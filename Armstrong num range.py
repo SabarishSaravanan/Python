@@ -1,4 +1,4 @@
-Adef Armstrong_range(a,b):
+def Armstrong_range(a,b):
     for num in range(a,b+1):
         s=str(num)
         sum=0

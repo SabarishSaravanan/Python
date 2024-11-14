@@ -1,0 +1,21 @@
+def rat():
+    r=int(input("r:"))
+    unit=int(input("unit:"))
+    n=int(input("n:"))
+    arr=[]
+    for i in range(0,n):
+        a=int(input())
+        arr.append(a)
+    print(arr) 
+
+    total = r*unit
+    sum=0
+    count=0
+    for i in arr:
+        sum=sum+i
+        count=count+1
+        if sum>total:
+            return count
+    return -1
+    
+rat()
